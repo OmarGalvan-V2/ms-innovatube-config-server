@@ -1,0 +1,76 @@
+# 1. Version control
+.git/
+.gitignore
+.gitattributes
+
+# 2. Java build outputs
+/target/
+*.class
+
+# 3. IDE and project files
+.classpath
+.project
+.settings/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 4. Documentation
+*.md
+README*
+HELP.md
+
+# 5. Test and development artifacts
+test/
+tests/
+debug/
+*.log
+
+# 6. Temporary and local files
+tmp/
+temp/
+*.tmp
+.local/
+local/
+
+# 7. Environment and secrets
+.env*
+*.env
+*.pem
+*.key
+*.crt
+config.local.*
+*.local.yml
+
+# 8. Other VCS
+.svn/
+.hg/
+
+# 9. Node.js, Python, Go (not present, but for completeness)
+node_modules/
+npm-debug.log
+yarn-debug.log
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+/vendor/
+*.test
+.go-cache/
+
+# 10. Build outputs (generic)
+dist/
+build/
+out/
+
+# 11. Docker files (do not ignore Dockerfile itself, but ignore docker-compose files)
+docker-compose*
+
+# 12. Project-specific: Maven wrapper and directory should NOT be ignored (per instructions)
+# .mvn/
+# mvnw
+# mvnw.cmd
+
+# End of .dockerignore

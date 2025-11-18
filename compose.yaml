@@ -1,0 +1,16 @@
+services:
+  config-server:
+    build:
+      context: .
+    image: java-config_server:latest
+    container_name: config-server
+    restart: unless-stopped
+    init: true
+    ports:
+      - "8888:8888"
+    networks:
+      - innovatube-network
+
+networks:
+  innovatube-network:
+    driver: bridge
